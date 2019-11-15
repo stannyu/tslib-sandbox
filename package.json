@@ -1,8 +1,8 @@
 {
   "name": "tslib-sandbox",
-  "version": "1.0.2",
+  "version": "1.0.8",
   "description": "Just a sandbox for typescript library.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "jest",
     "tsc": "tsc"
