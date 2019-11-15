@@ -1,0 +1,29 @@
+{
+  "name": "tslib-sandbox",
+  "version": "1.0.2",
+  "description": "Just a sandbox for typescript library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "tsc": "tsc"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "testRegex": "^.+\\.spec\\.ts$"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^24.0.23",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.7.2"
+  }
+}

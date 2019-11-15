@@ -1,0 +1,28 @@
+define("cl", ["require", "exports"], function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    class Cl {
+        static clMethod() {
+            console.log('Logger fired!!!');
+        }
+    }
+    exports.Cl = Cl;
+});
+define("index", ["require", "exports", "cl"], function (require, exports, cl_1) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    function justSumNums(a, b) {
+        cl_1.Cl.clMethod();
+        return a + b;
+    }
+    exports.justSumNums = justSumNums;
+});
+define("sum.spec", ["require", "exports", "index"], function (require, exports, index_1) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    describe('sum method test', () => {
+        it('should summarize two numbers', () => {
+            expect(index_1.justSumNums(1, 2)).toEqual(3);
+        });
+    });
+});
